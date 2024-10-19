@@ -1,0 +1,61 @@
+/* Fondo de la página y tipografía */
+body {
+    font-family: 'Verdana', sans-serif !important;
+    background-color: #e0f7fa !important; /* Fondo azul claro */
+    color: #333 !important;
+}
+
+/* Títulos */
+h1 {
+    color: #00796b !important; /* Verde oscuro */
+    text-align: center !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}
+
+/* Formularios */
+label {
+    font-weight: bold !important;
+    color: #00796b !important;
+}
+
+input, textarea {
+    width: 100% !important;
+    padding: 12px !important;
+    margin: 10px 0 !important;
+    border-radius: 8px !important;
+    border: 2px solid #00796b !important; /* Borde verde oscuro */
+    background-color: #fff !important;
+}
+
+input:focus, textarea:focus {
+    border-color: #004d40 !important;
+    box-shadow: 0 0 10px #004d40 !important;
+}
+
+/* Botones */
+button {
+    background-color: #00796b !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+}
+
+button:hover {
+    background-color: #004d40 !important; /* Oscurecer el botón al pasar el mouse */
+}
+
+/* Hipervínculos */
+a {
+    color: #00796b !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+a:hover {
+    color: #004d40 !important;
+    text-decoration: underline !important;
+}

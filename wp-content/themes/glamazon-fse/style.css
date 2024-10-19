@@ -1,0 +1,223 @@
+/*
+Theme Name: Glamazon FSE
+Theme URI: https://gracethemes.com/themes/free-makeup-salon-wordpress-theme/
+Author: Grace Themes
+Author URI: https://gracethemes.com/
+Description: The Glamazon FSE is a free makeup salon WordPress theme for beauty spa, salon, massage, cosmetic shop, yoga, meditation, health care and wellness center. This theme is ideal for makeup artist, model, influencer, beauty and makeup artistry business, makeup shop and any other makeup-related businesses. It provides you with a lot of amazing options so that you can craft the best makeup-selling website. Besides makeup, you may make use of this theme to sell cosmetics, skin products, well-being products for women, and a lot more. This WordPress theme consists of the latest features and functions, and when you select it, you enjoy some of the best advantages of it. This theme comes with a simple and user-friendly UI, best for the newbies out there. This theme is customizable, and therefore, you can make changes to it with ease. As this is a full-site editing-based theme, almost every component available on this theme is customizable. This Free Makeup Salon WordPress theme is compatible with several widgets, making it one of the best widget-friendly themes. This is a cross-browser compatible theme and can easily run on most of the renowned browsers such as Mozilla Firefox, Chrome, Yahoo, and more. Also, it is an HD-ready theme and looks amazing on both high-end and low-end devices. Demo: https://gracethemesdemo.com/glamazon/
+
+Version: 1.0
+License: GNU General Public License version 2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: glamazon-fse
+Requires PHP:  5.6
+Tested up to: 6.5
+Tags:blog, news, photography, one-column, two-columns, right-sidebar, block-styles, custom-colors, editor-style, custom-background, custom-menu, featured-images, template-editing, full-site-editing, block-patterns,  threaded-comments, wide-blocks, translation-ready
+Glamazon FSE WordPress Theme has been created by Grace Themes(gracethemes.com), 2024.
+Glamazon FSE WordPress Theme is released under the terms of GNU GPL
+*/
+body { 
+	position:relative;
+}
+.wp-block-navigation ul{ 
+	padding:10px 20px!important;
+}
+/*dropdown menu background color*/
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container{ 
+	background-color:#5c422a; 
+	left:-36px !important;
+	right:0px !important;
+}
+body.page-template-front .site-main-header {  
+	width:100%; 
+	z-index:999;
+	background:transparent !important; 
+	position: absolute !important;
+}
+.site-main-header{  
+	background-color:#5c422a; 
+	position:relative !important;
+}
+.clear{ 
+	clear:both;
+}
+
+.logoBX{ 
+	position:relative;
+}
+
+/* = Four column  CSS
+----------------------------------------------- */
+.FourColbx{ 
+	position:relative ;
+	text-align:center; 
+	display:block !important;
+}
+.FourColbx .thumbBox{ 
+	width:130px; 
+	height:130px; 
+	line-height:100px;
+	margin:0 auto; 
+	text-align:center; 
+	background-color:#ffffff; 
+	border-radius:100%;
+	display:block !important;
+}
+
+.FourColbx:hover .thumbBox{ 
+	background-color:#be0000; 
+}
+.FourColbx .thumbBox img{ 
+	text-align:center; 
+	margin:0 auto;
+	display:inline;
+}
+
+.FourColbx:hover .thumbBox img{ 
+	filter: invert(100%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(100%);
+}
+
+.FourColbx .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link{ 
+	width:50px; 
+	height:50px; 
+	line-height:50px; 
+	text-align:center; 
+	border-radius:50% !important;
+}
+.FourColbx .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:hover{ 
+	color:#ffffff !important;
+}
+
+
+/* = Beauty 4 image Boxes CSS
+----------------------------------------------- */
+.fse-image-stylish-BX{ position:relative; text-align:center;}
+.fse-image-stylish-BX .beauty-imageBX{ position:relative; overflow:hidden;  height:350px;}
+.fse-image-stylish-BX .beauty-imageBX::before {content:''; width: 90% !important; box-shadow: 0px 20px 100px 60px rgba(175, 105, 53, 3); position:absolute; bottom:0px; left:0px; z-index:9999; height:auto; border-radius: 15px !important;}
+.fse-image-stylish-BX .beauty-titleBX{ position:absolute; bottom:55px; text-align:left; padding-left:50px; z-index:9999; }
+.fse-image-stylish-BX .beauty-imageBX img{ width: 100%; transition: 0.5s all ease-in-out;}
+.fse-image-stylish-BX .beauty-imageBX:hover img{ transform: scale(1.2); }
+
+
+
+
+/* = Blog page Design CSS
+----------------------------------------------- */
+ul.blog-list-style{ 
+	margin:0; 
+	padding:0; 
+}
+ul.blog-list-style li{ 
+	margin-bottom:25px; 
+	border-radius:10px; 
+	display:flow-root;
+}
+ul.blog-list-style li .blog-thumbx{ 
+	width:45%; 
+	float:left;
+	 margin:0 35px 20px 0;
+}
+
+/* = Contact Form 7 CSS
+----------------------------------------------- */
+.wpcf7{ 
+margin:30px 0 0;padding:0;
+}
+.wpcf7 input[type="text"], 
+.wpcf7 input[type="tel"], 
+.wpcf7 input[type="email"]{ 
+	width:40%;
+	border:1px solid #cccccc;
+	box-shadow:inset 1px 1px 2px #ccc;
+	color:#797979;
+	margin-bottom:0;
+	height:40px;
+	padding:0 15px;
+}	
+.wpcf7 textarea{
+	color:#797979;
+	margin-bottom:25px;
+	border:1px solid #cccccc;
+	box-shadow:inset 1px 1px 2px #ccc;
+	padding:10px;
+	width:60%;
+	height:160px;
+	font-size:12px;
+}
+.wpcf7 input[type="submit"]{
+	border-radius:40px;
+	font-weight:600;
+	font-size:16px;
+	cursor:pointer;
+	background-color:#60c19f;
+	padding:20px 40px;
+	color:#ffffff;
+	width:auto;
+	border:none;
+	text-transform:uppercase;
+}
+.wpcf7 input[type="submit"]:hover{
+	background-color:#101010;
+}
+
+/* = Footer CSS
+----------------------------------------------- */
+.footer-3-column{ 
+	position:relative;
+}
+.footer-3-column h3.wp-block-heading{ 
+	position:relative; 
+	padding-bottom:20px;
+}
+.footer-3-column h3.wp-block-heading::before{ 
+	position: absolute; 
+	content:''; 
+	bottom:0; 
+	left:0; 
+	width:70px; 
+	height:2px; 
+	background-color:#8cc73e
+}
+
+ul.fs-footer-post{ 
+	margin:0; 
+	padding:0;
+}
+ul.fs-footer-post li{ 
+	list-style:none; 
+	margin-bottom:30px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__featured-image{ 
+	margin-top:6px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__featured-image img{ 
+	border-radius:10px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__post-title{ 
+	margin-bottom:15px; 
+	display:block; 
+	line-height:22px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__post-title:hover{ 
+	color:#8cc73e;
+}
+footer.wp-block-template-part{ 
+	margin-block-start:0 !important
+}
+
+.Footer-QuickLinks{ 
+	list-style:none !important; 
+	padding:0 !important;
+}
+.Footer-QuickLinks li{ 
+	list-style:none !important; 
+	padding:5px 0 5px 0 !important;
+}
+/*.Footer-QuickLinks li::marker { 
+	content: ' > ';  
+	font-size: 16px;
+}*/
+.Footer-QuickLinks li a:hover{ 
+	text-decoration:none; 
+	font-weight:600;
+}
+

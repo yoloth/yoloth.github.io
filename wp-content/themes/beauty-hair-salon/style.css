@@ -1,0 +1,233 @@
+/*
+Theme Name: Beauty Hair Salon
+Theme URI: https://www.ovationthemes.com/products/free-beauty-wordpress-theme
+Author: pewilliams
+Author URI: https://www.ovationthemes.com/
+Description: Beauty Hair Salon brings a suitable design that works wonderfully with hair salons, beauty salons, hair spas, hairdressers, beauty shops, cosmetics, health and lifestyle, massage, salon, wellness and spa, homemade soaps, organic beauty products shops, nail salons, and more. Designed with a clean interface and secure codes, this theme has the expertise of experienced WP developers and brings you minimal design that focuses on the content itself. This elegant theme is made retina-ready to bring a design that is friendly with all the screen sizes and gives a fantastic experience to the users. This theme doesn’t want you to have any kind of coding skills to create any website. With a professional display of services. This comes along with plenty of personalization options as well as a lot of incredible sections built such as the Banner, Team, Testimonial, etc. a lot of social media options are included in the design to make sure that you are never short of promotional options for your business. Call to Action Buttons (CTA) are also included acting as a guide to users. SEO-friendly codes of this theme are well-optimized to give you a faster page load time. This theme is based on the Bootstrap framework. Also, this theme is compatible with appointment booking plugins. So let's beautify your hair salon now! Demo: https://trial.ovationthemes.com/beauty-hair-salon/
+Version: 4.1
+Requires PHP: 5.6
+Tested up to: 6.6
+Requires at least: 5.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: beauty-hair-salon
+Template: beauty-salon-spa
+Tags: blog, portfolio, photography, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, grid-layout, custom-colors, custom-background, custom-header, custom-menu, custom-logo, editor-style, sticky-post, featured-images, flexible-header, featured-image-header, footer-widgets, full-width-template, threaded-comments, theme-options, wide-blocks, block-styles, post-formats, translation-ready, rtl-language-support
+
+Beauty Hair Salon WordPress Theme, Copyright 2022 pewilliams
+Beauty Hair Salon is distributed under the terms of the GNU GPL
+
+Beauty Hair Salon WordPress Theme is child theme of Beauty Salon Spa WordPress Theme, Copyright 2021 pewilliams
+Beauty Salon Spa WordPress Theme is distributed under the terms of the GNU GPL
+*/
+
+:root {
+    --theme-primary-color:#e782a0;
+    --theme-text-color:#9f88a2;
+    --theme-secondary-color:#541f5c;
+    --theme-primary-fade:#ffeff4;
+    --theme-footer-color:#541f5c;
+}
+
+span.entry-author a,.comment-author a,.product_meta a {
+    text-decoration: underline;
+}
+body,#slider .carousel-caption p {
+    color: var(--theme-text-color);
+}
+p.chat_btn a,#slider{
+    background: var(--theme-primary-color);
+}
+.home-btn a:hover, p.chat_btn a:hover,#slider .carousel-control-next-icon:hover, 
+#slider .carousel-control-prev-icon:hover,.wc-block-cart__submit-container a:hover,
+.prev.page-numbers:focus, .prev.page-numbers:hover, .next.page-numbers:focus, 
+.next.page-numbers:hover,.copyright,.top_bar,a.added_to_cart.wc-forward:hover,
+ nav.woocommerce-MyAccount-navigation ul li:hover, .woocommerce #respond input#submit:hover, 
+ .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, 
+ .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, 
+ .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,button:hover, 
+ button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, 
+ input[type="submit"]:focus,p.chat_btn a:hover,#home-services .box-button a,.owl-nav i{
+    background: var(--theme-secondary-color);
+    color: #fff !important;
+}
+.box h4 ,#home-services .box-content a,#product h4 a,.woocommerce-Price-amount.amount,#product h3 ,#product h5 ,#home-services h6 ,#home-services h3,.header-search-wrapper i ,#slider .carousel-caption h2 ,.logo h1, .site-title, .site-title a, .logo h1 a,.withoutimg-date-box a:hover,.wc-block-checkout__actions_row a:hover,.box span,.gb_nav_menu li a ,.site-info .footer-copyright,.site-info a:hover {
+    color: var(--theme-secondary-color);
+}
+.bread_crumb .without-img a, .bread_crumb .without-img ,
+.gb_nav_menu ul ul a:hover,.gb_nav_menu li.page_item_has_children:after,
+.gb_nav_menu li.menu-item-has-children:after,.woocommerce ul.products li.product .price, 
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+    color: var(--theme-secondary-color) !important;
+}
+.inner-div .date-box a:hover,.home-btn a:hover, p.chat_btn a:hover,.site-info,
+p.chat_btn a:hover,p.chat_btn a,#home-services .box-button a:hover{
+    color: #fff;
+}
+nav.woocommerce-MyAccount-navigation ul li:hover a{
+    color: #fff !important;
+}
+.wrap_figure{
+    background: var(--theme-primary-fade);
+}
+.without-img-head {
+    border-top: 1px solid var(--theme-secondary-color);
+}
+/*loader*/
+#loader{
+  border-top-color: var(--theme-primary-color);
+}
+#loader:after{
+  border-top-color: var(--theme-secondary-color);
+}
+.spinner > div{
+  background-color: var(--theme-secondary-color);
+}
+/* --------- Header --------- */
+
+.top_bar{
+    border: none;
+}
+.page-template-custom-home-page .menu_header {
+    background: #fff;
+    position: static;
+}
+/* --------- Product --------- */
+
+#product .box{
+    background-color: var(--theme-secondary-color);
+    text-align: center;
+    position: relative;
+}
+#product .box img{
+    width: 100%;
+    height: 350px;
+    transition: all 0.5s ease 0s;
+}
+#product .box:hover img{
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+#product .box .box-content a {
+    color: #fff;
+    background: var(--theme-primary-color);
+    padding: 15px;
+    opacity: 0;
+    transform: perspective(700px) translateX(-50%) rotateY(40deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.4s ease-out;
+    bottom: auto;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 60%);
+    font-weight: bold;
+}
+#product .box .box-content a.added_to_cart.wc-forward {
+    margin: 0;
+    padding: 15px 24px;
+}
+#product .box:hover .box-content a{
+    opacity: 1;
+    transform: perspective(700px) translateX(-50%) rotateY(0);
+}
+#product .box-content{
+    padding: 0;
+}
+#product .box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    transition: all 0.4s ease-out;
+    background: var(--theme-primary-color);
+}
+#product .box:hover .icon{ opacity: 1; }
+#product .box .icon li span{
+    color: #fff;
+    background-color: var(--theme-primary-color);
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    transition: all .3s ease 0s;
+    padding: 5px;
+    font-weight: bold;
+}
+#product h3 {
+    font-size: 35px;
+}
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+    padding: 2px;
+}
+
+/* Accessibility */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+@media screen and (max-width: 991px){
+    .toggle-menu button {
+        background: var(--theme-primary-color);
+        color: #fff !important;
+    }
+    .side_gb_nav{
+        background: var(--theme-primary-color);
+    }
+    .gb_nav_menu ul li a:active, .gb_nav_menu ul li a:hover {
+        color: var(--theme-secondary-color) !important;
+    }
+    .gb_nav_menu ul ul{
+        background: transparent;
+    }
+}
+@media screen and (max-width:782px){
+    .page-template-custom-home-page p.chat_btn a{
+        color: #fff;
+        background: var(--theme-primary-color);
+    }
+}
+@media screen and (max-width: 575px){
+    #slider .carousel-control-next-icon, #slider .carousel-control-prev-icon,#slider .carousel-control-next-icon:hover, #slider .carousel-control-prev-icon:hover{
+        background: transparent;
+    }
+}
